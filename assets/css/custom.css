@@ -26,3 +26,7 @@ footer{
     margin-top: 45px;
     font-size: 25pt;
 }
+
+footer a{
+color: white !important;
+}
