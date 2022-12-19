@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+body{ background-color: black !important;
+    color:white !;
+
+}
+h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white !;
+    font-size: 36pt;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.card-body{
+    background-color:dodgerblue;
+    color: white !important;
+}
+
+.card img{
+    max-height: 160px !important;
+}
+footer{
+    background-color: dodgerblue;
+    padding: 15px;
+    margin-top: 45px;
+    font-size: 25pt;
+}

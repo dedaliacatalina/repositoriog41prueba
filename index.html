@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/custom.css" />
+    <link rel="stylesheet" href="/assets/css/custom.css"/>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
     crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <script
     src="https://kit.fontawesome.com/3cc04b2021.js"
     crossorigin="anonymous"></script>
@@ -20,9 +21,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-static fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"
-            ><img
-            src="assets/img/viajes.svg" alt="Logo" class="d-inline-block col-sm-1 text-center"/>
+            <a class="navbar-brand text-light" href="#"
+            ><img src="assets/img/viajes.svg" alt="Logo" class="d-inline-block col-1 text-center"/>
             Viajes de Chile
             </a>
             <button
@@ -35,19 +35,19 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse text-light" id="navbarNav">
+            <ul class="navbar-nav text-light">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link text-light" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Quienes Somos </a>
+                <a class="nav-link text-light" onclick="gotocontact()"> Quienes Somos </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"> Destacados </a>
+                <a class="nav-link text-light" onclick="gotocontact()"> Destacados </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link"> Contacto </a>
+                <a class="nav-link text-light" onclick="gotocontact()"> Contacto </a>
               </li>
             </ul>
           </div>
@@ -101,7 +101,7 @@
         </button>
       </div>
     </header>
-<div class="container-fluid px-2">
+<div class="container px-2" id="quienessomos-section">
     <h2 class="text-center text-light">Quienes Somos</h2>
     <div class="row text-light">
         <div class="col-xs-12 col-md-6 col-lg-4 d-flex flex-column">
@@ -110,15 +110,13 @@
             </div>
             <div class="infocontent">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure deleniti officia, ea labore repellendus at quis recusandae veniam quam delectus in! Fuga dolores ex ut, obcaecati dolor minima libero?
-                </p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, ratione reprehenderit numquam temporibus debitis doloribus cupiditate autem. Dolores consequatur, illo cum mollitia quasi rem enim similique reprehenderit explicabo amet ipsa exercitationem inventore, modi assumenda, beatae sint obcaecati harum unde. Quasi iusto rem ipsa dolorem molestiae accusamus consequatur, dolorum adipisci suscipit delectus ea debitis nobis qui, sed odio, itaque quidem. Labore.</p>
             </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-4 d-flex flex-column">
             <div class="infocontent">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure deleniti officia, ea labore repellendus at quis recusandae veniam quam delectus in! Fuga dolores ex ut, obcaecati dolor minima libero?
-                </p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita voluptate necessitatibus, non, itaque est illo id corrupti, reprehenderit omnis delectus. Numquam ut dolores voluptate? Natus, ea porro? Nulla dolores distinctio, dolor dolorum sunt velit modi amet aliquid nesciunt numquam nostrum itaque magni expedita eius, temporibus nam facere aliquam ipsa fugiat tempora dolore soluta? Minus cum tempore neque nesciunt vero.</p>
             </div>
             <div class="infoheader text-center bg-primary py-2">
                 <i class="fas fa-mountain"></i>
@@ -130,21 +128,20 @@
             </div>
             <div class="infocontent">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure deleniti officia, ea labore repellendus at quis recusandae veniam quam delectus in! Fuga dolores ex ut, obcaecati dolor minima libero?
-                </p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo magni quis quaerat debitis eaque nulla consequuntur sunt aperiam possimus iste. Adipisci quas veniam velit ipsum explicabo ducimus placeat, voluptate molestiae enim hic sapiente? Ullam odit eveniet voluptates est fuga ipsa dolorum maiores aut aliquam minima, reiciendis accusamus, magnam libero nisi. Unde illo voluptatum error dolores, laudantium provident magnam minima in!</p>
             </div>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container" id="destacados-section">
     <h2 class="text-center text-light"> Destacados </h2>
     <div class="row">
         <div class="col-md-3 mt-5">
             <div class="card mx-auto" style="width:18rem;">
                 <img src="assets/img/card1.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                    <h5 class="card-title"> San Pedro de Atacama : 1 o 2 noches en alojamiento a eleccion </h5>
-                    <p> D-Latam Travel </p>
+                  <h4> Atacama </h4>
+                    <h5 class="card-title"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, placeat? </h5>
                 </div>
             </div>
         </div>
@@ -152,8 +149,8 @@
             <div class="card mx-auto" style="width:18rem;">
                     <img src="assets/img/card2.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                    <h5 class="card-title"> San Pedro de Atacama : 1 o 2 noches en alojamiento a eleccion </h5>
-                    <p>D-Latam Travel </p>
+                  <h4> Agua </h4>
+                    <h5 class="card-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vitae. </h5>
                 </div>
             </div>
         </div>
@@ -161,8 +158,9 @@
             <div class="card mx-auto" style="width:18rem;">
                     <img src="assets/img/card3.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                    <h5 class="card-title"> San Pedro de Atacama : 1 o 2 noches en alojamiento a eleccion </h5>
-                    <p>D-Latam Travel </p>
+                  <h4> Desierto </h4>
+                    <h5 class="card-title"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, architecto. </h5>
+                    
                 </div>
             </div>
         </div>
@@ -170,28 +168,28 @@
             <div class="card mx-auto" style="width:18rem;">
                     <img src="assets/img/card4.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                    <h5 class="card-title"> San Pedro de Atacama : 1 o 2 noches en alojamiento a eleccion </h5>
-                    <p> D-Latam Travel </p>
+                  <h4> Selva </h4>
+                    <h5 class="card-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dignissimos. </h5>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="contact-section">
     <h2 class="text-center text-light"> Contacto </h2>
     <div class="row">
         <form>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                <label for="exampleFormControlInput1" class="form-label text-light">Nombre</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
               </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-                <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                <label for="exampleFormControlInput2" class="form-label text-light">Apellido</label>
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
@@ -201,14 +199,16 @@
 </div>
 
 <footer>
-    <div class="cointainer">
-        <div class="col">
-            <h3> VIAJES DE CHILE </h3>
+    <div class="cointainer text-light">
+        <div class="row">
+          <div class="col-md-9 "><h3> VIAJES DE CHILE </h3>
+          </div>
+          <div class="col-md-3">
             <i class="fab fa-github-square"></i>
             <i class="fab fa-linkedin"></i>
             <i class="fab fa-twitter-square"></i>
             <i class="fab fa-facebook-square"></i>
-
+          </div>
         </div>
     </div>
 </footer>
